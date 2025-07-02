@@ -34,6 +34,68 @@
             </div>
         </nav>
     </header>
-    
+
+    <div class="container my-5">
+    <h2 class="mb-4">Buenas prácticas para protegerte en línea</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Usa contraseñas seguras y únicas.</li>
+      <li class="list-group-item">Activa la verificación en dos pasos (2FA).</li>
+      <li class="list-group-item">No hagas clic en enlaces sospechosos.</li>
+      <li class="list-group-item">Mantén actualizado tu software y antivirus.</li>
+      <li class="list-group-item">Usa redes Wi-Fi seguras y evita las públicas para transacciones.</li>
+    </ul>
+  </div>
+
+  <div class="container my-5">
+    <h2>¿Necesitas más información?</h2>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <div class="container text-center my-5">
+    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#testModal">
+      Realizar Test de Seguridad
+    </button>
+  </div>
+
+  <div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Test de Seguridad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>¿Qué debes hacer si recibes un correo sospechoso?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="test" id="resp1" value="1" />
+            <label class="form-check-label" for="resp1">Hacer clic en el enlace para comprobar.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="test" id="resp2" value="2" />
+            <label class="form-check-label" for="resp2">Ignorarlo y reportarlo como phishing.</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p id="test-feedback" class="me-auto text-success fw-bold"></p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="submitTest">Enviar Respuesta</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
