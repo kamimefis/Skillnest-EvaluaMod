@@ -13,14 +13,34 @@
 </head>
 <body>
     <header>
-        <iframe src="./nav.html" width="100%" height="60"></iframe>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Ciberseguridad</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="./amenazas.html">Amenazas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="./consejos.html">Consejos</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <article class="text-center px-5 py-3 bg-dark text-white mx-5 my-3">
+    <section class="text-center px-5 py-3 bg-dark text-white mx-5 my-3">
         <h1>Qué es la ciberseguridad?</h1>
         <p>
             La ciberseguridad, también conocida como seguridad digital, es la práctica de proteger su información digital, dispositivos y activos. Esto incluye información personal, cuentas, archivos, fotos e incluso el dinero.
         </p>
-        <img />
+        <img src="./assets/img/ciberseguridad.webp" alt="ciberseguridad" height="200"/>
         <p>
             El acrónimo "CIA" se usa a menudo para representar los tres pilares de la ciberseguridad.
         </p>
@@ -33,6 +53,6 @@
         <p><strong>Acceso:</strong>
             garantizar que puede tener acceso a su información y sistemas cuando lo necesite. Un ejemplo de un problema de acceso sería una denegación de servicio, donde los atacantes desbordan el sistema con tráfico de red para hacer que el acceso sea casi imposible; o ransomware que cifra el sistema e impide que lo use.
         </p>
-    </article>
+    </section>
 </body>
 </html>
