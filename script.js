@@ -4,7 +4,7 @@ $(document).ready(function() {
     const threats = [
         {
           title: 'Phishing',
-          description: 'Técnica que engaña al usuario para que proporcione información confidencial.',
+          description: 'Técnica que engaña al usuario para que proporcione información confidencial.', 
         },
         {
           title: 'Ransomware',
@@ -23,7 +23,7 @@ $(document).ready(function() {
     threats.forEach((threat, i) => {
         $('#threat-cards').append(`
           <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow">
+            <div class="card h-100 shadow bg-dark text-light">
               <div class="card-body">
                 <h5 class="card-title">${threat.title}</h5>
                 <p class="card-text">${threat.description}</p>
@@ -37,22 +37,25 @@ $(document).ready(function() {
         {
           title: 'Caso Twitter 2020',
           text: 'Ataque de phishing dirigido a empleados permitió tomar el control de cuentas de alto perfil.',
+          icon: '<i class="bi bi-twitter-x"></i>'
         },
         {
           title: 'WannaCry 2017',
           text: 'Ransomware que afectó a hospitales, empresas y gobiernos en más de 150 países.',
+          icon: '<i class="bi bi-emoji-kiss-fill"></i>'
         },
         {
           title: 'GitHub DDoS 2018',
           text: 'Ataque DDoS más grande registrado en ese momento, con 1.35 Tbps de tráfico.',
+          icon: '<i class="bi bi-github"></i>'
         }
     ];
 
     cases.forEach((item, i) => {
         $('#carousel-items').append(`
-          <div class="carousel-item ${i === 0 ? 'active' : ''}">
-            <div class="d-flex flex-column align-items-center justify-content-center p-4" style="min-height: 200px; background: #f8f9fa;">
-              <h5>${item.title}</h5>
+          <div class="carousel-item ${i === 0 ? 'active' : ''} bg-dark">
+            <div class="d-flex flex-column align-items-center justify-content-center p-4 text-light" style="min-height: 200px;">
+              <h5>${item.icon} ${item.title}</h5>
               <p class="text-center w-75">${item.text}</p>
             </div>
           </div>
