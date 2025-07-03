@@ -8,64 +8,65 @@
     <script src="./script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Ciberseguridad</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link text-white" href="./amenazas.html">Amenazas</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link text-white" href="./consejos.html">Consejos</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Ciberseguridad</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./amenazas.html">Amenazas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./consejos.html">Consejos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <div class="container my-5">
-    <h2 class="mb-4">Buenas prácticas para protegerte en línea</h2>
-    <ul class="list-group">
-      <li class="list-group-item">Usa contraseñas seguras y únicas.</li>
-      <li class="list-group-item">Activa la verificación en dos pasos (2FA).</li>
-      <li class="list-group-item">No hagas clic en enlaces sospechosos.</li>
-      <li class="list-group-item">Mantén actualizado tu software y antivirus.</li>
-      <li class="list-group-item">Usa redes Wi-Fi seguras y evita las públicas para transacciones.</li>
-    </ul>
-  </div>
-
-  <div class="container my-5">
-    <h2>¿Necesitas más información?</h2>
-    <form id="contactForm">
-      <div class="mb-3">
-        <label for="name" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="name" required />
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo Electrónico</label>
-        <input type="email" class="form-control" id="email" required />
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="message" rows="3" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+  <div class="banner-2">
+    <div class="container text-light">
+      <h2 class="mb-4 pt-3 consejos-list">Buenas prácticas para protegerte en línea</h2>
+      <ul class="list-group">
+        <li class="list-group-item bg-transparent border-0 text-white">
+          <i class="bi bi-shield-check"></i>
+          <span class="consejos-list">Usa contraseñas seguras y únicas.</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0 text-white">
+          <i class="bi bi-shield-check"></i> 
+          <span class="consejos-list">Activa la verificación en dos pasos (2FA).</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0 text-white">
+          <i class="bi bi-shield-check"></i>
+          <span class="consejos-list">No hagas clic en enlaces sospechosos.</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0 text-white">
+          <i class="bi bi-shield-check"></i> 
+          <span class="consejos-list">Mantén actualizado tu software y antivirus.</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0 text-white">
+          <i class="bi bi-shield-check"></i> 
+          <span class="consejos-list">Usa redes Wi-Fi seguras y evita las públicas para transacciones.</span>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <div class="container text-center my-5">
+    <h1 class="text-light">Pon a prueba tus conocimientos</h1>
+    <h5 class="text-warning-emphasis mb-3">Diviértete con un pequeño test para aprender más sobre ciberseguridad</h5>
     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#testModal">
       Realizar Test de Seguridad
     </button>
@@ -94,6 +95,32 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-primary" id="submitTest">Enviar Respuesta</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5  bg-dark py-5">
+    <h2 class="text-light mb-5 text-center">¿Necesitas más información?</h2>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-5 d-flex justify-content-center align-items-center">
+        <img src="assets/img/ciberseguridad.webp" height="200px" class="contact-us-img"/>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label text-light">Nombre</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-light">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-light">Mensaje</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
     </div>
   </div>

@@ -23,7 +23,7 @@ $(document).ready(function() {
     threats.forEach((threat, i) => {
         $('#threat-cards').append(`
           <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow bg-dark text-light">
+            <div class="card h-100 shadow bg-dark text-info">
               <div class="card-body">
                 <h5 class="card-title">${threat.title}</h5>
                 <p class="card-text">${threat.description}</p>
@@ -88,7 +88,7 @@ $(document).ready(function() {
     } else if (selected === '2') {
       feedback.text('Correcto! Esa es la acción recomendada.').removeClass().addClass('text-success fw-bold');
     } else {
-      feedback.text('Incorrecto. Nunca hagas clic en enlaces sospechosos.').removeClass().addClass('text-danger fw-bold');
+      feedback.text('Incorrecto. Nunca hagas click en enlaces sospechosos.').removeClass().addClass('text-danger fw-bold');
     }
   });
 
